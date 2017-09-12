@@ -1,8 +1,10 @@
 /* line 1, scss/main.scss */
-.container {
-  background-color: yellow;
-  width: 100vw;
-  height: 100vh;
+.animal_shelter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 24px;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5jc3MiLCJzb3VyY2VzIjpbIm1haW4uc2NzcyJdLCJzb3VyY2VzQ29udGVudCI6WyIuY29udGFpbmVyIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogeWVsbG93O1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG59XG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLEFBQUEsVUFBVSxDQUFDO0VBQ1QsZ0JBQWdCLEVBQUUsTUFBTTtFQUN4QixLQUFLLEVBQUUsS0FBSztFQUNaLE1BQU0sRUFBRSxLQUFLO0NBQ2QifQ== */
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5jc3MiLCJzb3VyY2VzIjpbIm1haW4uc2NzcyJdLCJzb3VyY2VzQ29udGVudCI6WyIuYW5pbWFsX3NoZWx0ZXIge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgZmxleC13cmFwOiB3cmFwO1xuICBmb250LXNpemU6IDI0cHg7XG59XG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLEFBQUEsZUFBZSxDQUFDO0VBQ2QsT0FBTyxFQUFFLElBQUk7RUFDYixlQUFlLEVBQUUsTUFBTTtFQUN2QixXQUFXLEVBQUUsTUFBTTtFQUNuQixTQUFTLEVBQUUsSUFBSTtFQUNmLFNBQVMsRUFBRSxJQUFJO0NBQ2hCIn0= */
