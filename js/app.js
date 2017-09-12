@@ -11,10 +11,10 @@ $(function() {
       let h3 = $('<h3>').text(animals[i].animal);
       let h4 = $('<h4>').text(animals[i].animalName);
       let delBtn = $("<button class='delete'>Delete</button>");
-      let modBtn = $("<button class='modify'>Modify</button>");
+      let editBtn = $("<button class='edit'>Edit</button>");
       delBtn.attr("data-id", animals[i].id);
-      modBtn.attr("data-id", animals[i].id);
-      li.append(h3).append(h4).append(delBtn).append(modBtn);
+      editBtn.attr("data-id", animals[i].id);
+      li.append(h3).append(h4).append(delBtn).append(editBtn);
       list.append(li);
     };
   }
@@ -87,4 +87,41 @@ $(function() {
   };
 
   removeAnimal();
+
+  editAnimal = () => {
+    list.on("click", ".edit", function(event) {
+      if($(this).data('editMode')) {
+        $(this).data('editMode', false);
+        $(this).text('Edit');
+        $(this).parent().find('h3, h4').css('background-color', 'transparent').attr('contenteditable', false)
+
+        let id = $(this).parent().data('id');
+        let animal = $(this).parent().find('h3').text();
+        let animalName = $(this).parent().find('h4').text();
+
+        let newData = {
+          animal: animal,
+          animalName: animalName,
+        };
+
+        $.ajax({
+          url: animalsUrl + id,
+          type: 'PUT',
+          dataType: 'json',
+          data: newData,
+        }).done(function(data){
+
+        }).fail(function(error){
+          console.log(error);
+        });
+
+      } else {
+        $(this).data('editMode', true);
+        $(this).text('Confirm');
+        $(this).parent().find('h3, h4').css('background-color', 'white').attr('contenteditable', true);
+      };
+    });
+  };
+
+  editAnimal();
 });
