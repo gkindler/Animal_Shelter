@@ -1,7 +1,84 @@
-.animal_shelter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  font-size: 24px;
+// basic reset
+* {
+  margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+body {
+  width: 500px;
+  margin: 0 20px;
+  background-color: #96beff;
+
+  .form {
+    display: block;
+
+    .animal_form {
+
+      p {
+        font-size: 32px;
+        font-weight: bold;
+        margin: 10px 0;
+      }
+    }
+  }
+
+  .addAnimal {
+    margin-top: 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+
+  .list {
+    display: block;
+
+    p {
+      font-size: 32px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    h3 {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    h4 {
+      font-size: 20px;
+    }
+
+    .delete {
+      margin: 10px 0;
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 3px 5px;
+      font-size: 16px;
+      border-radius: 10px;
+      margin-right: 10px;
+    }
+
+    .edit {
+      margin: 10px 0;
+      background-color: yellow;
+      color: white;
+      border: none;
+      padding: 3px 5px;
+      font-size: 16px;
+      border-radius: 10px;
+    }
+  }
+
 }

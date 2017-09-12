@@ -5,17 +5,21 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <div class="animal_shelter">
-      <form class="animal_description">
-        <label> Animal:
-          <input type="text" class="get_animal" value="Animal">
+    <div class="form">
+      <form class="animal_form">
+        <label>
+          <p>Animal:</p>
+          <input type="text" class="get_animal" value="">
         </label>
-        <label> Animal name:
-          <input type="text" class="get_animalName" value="Animal name">
+        <label>
+          <p>Animal name:</p>
+          <input type="text" class="get_animalName" value="">
         </label>
-        <input type="submit" class="addAnimal" value="Add new animal">
       </form>
-
+    </div>
+    <input type="submit" class="addAnimal" value="Add new animal">
+    <div class="list">
+      <p>List of animals in the shelter:</p>
       <ul class="animal_list"></ul>
     </div>
 

@@ -88,6 +88,8 @@ $(function() {
 
   removeAnimal();
 
+  // editing existing animal
+
   editAnimal = () => {
     list.on("click", ".edit", function(event) {
       if($(this).data('editMode')) {
@@ -110,7 +112,7 @@ $(function() {
           dataType: 'json',
           data: newData,
         }).done(function(data){
-
+          
         }).fail(function(error){
           console.log(error);
         });

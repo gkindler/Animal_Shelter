@@ -1,19 +1,14 @@
 {
   "animals": [
     {
-      "id": 1,
       "animal": "Cat",
-      "animalName": "Moewsee"
+      "animalName": "Moewsee",
+      "id": 1
     },
     {
-      "id": 2,
       "animal": "Dog",
-      "animalName": "Doge"
-    },
-    {
-      "animal": "Hamster",
-      "animalName": "Fluffy",
-      "id": 3
+      "animalName": "Doge",
+      "id": 2
     }
   ]
 }
